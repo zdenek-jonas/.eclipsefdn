@@ -31,6 +31,13 @@ orgs.newOrg('technology.serializer', 'eclipse-serializer') {
       description: "Serializer project",
       has_discussions: true,
       homepage: "",
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          requires_pull_request: true,
+          requires_commit_signatures: true,
+          required_approving_review_count: 1
+        },
+      ],
       topics+: [
         "java",
         "object-graph",
