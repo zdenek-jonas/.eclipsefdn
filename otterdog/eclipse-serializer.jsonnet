@@ -27,7 +27,7 @@ orgs.newOrg('technology.serializer', 'eclipse-serializer') {
     orgs.newRepo('serializer') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      delete_branch_on_merge: false,
+      delete_branch_on_merge: true,
       description: "Serializer project",
       has_discussions: true,
       homepage: "",
